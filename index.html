@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" id="xml">
+
+        <br> button" <input name="button" type="button"><br>
+        <br> checkbox" <input name="checkbox" type="checkbox"><br>
+        <br> color" <input name="color" type="color"><br>
+        <br> date" <input name="date" type="date"><br>
+        <br> datetime-local <input name="datetime-local" type="datetime-local"><br>
+        <br> email" <input name="email" type="email"><br>
+        <br> file" <input name="file" type="file"><br>
+        <br> hidden" <input name="hidden" type="hidden"><br>
+        <br> image" <input name="image" type="image"><br>
+        <br> month" <input name="month" type="month"><br>
+        <br> number" <input name="number" type="number"><br>
+        <br> password" <input name="password" type="password"><br>
+        <br> radio" <input name="radio" type="radio"><br>
+        <br> range" <input name="range" type="range"><br>
+        <br> reset" <input name="reset" type="reset"><br>
+        <br> search" <input name="search" type="search"><br>
+        <br> submit" <input name="submit" type="submit"><br>
+        <br> tel" <input name="tel" type="tel"><br>
+        <br> text" <input name="text" type="text"><br>
+        <br> time" <input name="time" type="time"><br>
+        <br> url" <input name="url" type="url"><br>
+        <div>
+            <br> week" <input name="week" type="week"><br>
+        </div>
+
+
+        <select name="select" id="">
+            <option value="test">test</option>
+        </select>
+
+    </form>
+</body>
+<script src="./FormValueGeter.js"></script>
+
+<script>
+    let formdata = new FormValueGetter(document.getElementById('xml'));
+    console.log(formdata.getValue().str);
+</script>
+
+</html>
